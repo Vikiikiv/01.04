@@ -1,0 +1,79 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 0;
+}
+
+.header {
+    background-color: #ff4f4f;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.coffin-selection {
+   padding: 20px;
+}
+.obrázky {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+}
+.card {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    object-fit: cover;
+}
+.karta-velka {
+    flex: 3;
+    flex-wrap: wrap;
+    width: 15%;
+    height: auto;
+    padding: 20px;
+    background-color: rgb(247, 141, 12);
+    border-width: 2px;
+}
+.karta-stredni {
+    flex: 2;
+    width: 15%;
+    height: auto;
+    padding: 20px;
+    background-color: rgb(247, 141, 12);
+    border-width: 2px;
+}
+.karta-mala {
+    flex: 1;
+    width: 15%;
+    height: auto;
+    padding: 20px;
+    background-color: rgb(247, 141, 12);
+    border-width: 2px;
+}
+
+.card img {
+    
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card p {
+    margin: 0;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 100%;
+    }
+}
